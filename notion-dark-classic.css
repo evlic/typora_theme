@@ -17,8 +17,8 @@
     --code-color: #9a6e3a;
     --border-radius: 4px;
     --font-size: 16px;
-    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-    --monospace: 'SF Mono Medium', 'Fira Code', 'Cousine', 'Consolas', monospace;
+    --font-family: 'PingFang SC',-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    --monospace: 'JetBrains NF','SF Mono Medium', 'Fira Code', 'Cousine', 'Consolas', monospace;
     --heading-char-color: var(--light-trait-400);
     --color-popover-bg-color: var(--text-color);
     --rawblock-edit-panel-bd: var(--bg-color-dark);
@@ -407,6 +407,11 @@ kbd {
     font-size: var(--font-size) !important;
     font-style: normal;
     font-weight: medium;
+}
+
+
+.cm-s-inner .CodeMirror-cursor {
+    border-left: solid rgb(235, 235, 235) !important;
 }
 
 .CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
