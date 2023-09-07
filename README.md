@@ -27,3 +27,31 @@ open -a Typora
 ```
 
 enjoy it!
+
+
+
+## easy use in ide
+
+### vscode
+
+via https://marketplace.visualstudio.com/items?itemName=cyberbiont.vscode-open-in-typora
+
+### jetbrains
+
+**setting external tools**
+
+path: Setting/Tools/External Tools
+
+```shell
+Name: Typora
+Description: open markdown document in typora
+
+# on macOS with system program launcher "open -a"
+# if you want to boot on another operating system
+# you should find the executable file path and replace "open -a Typora"
+Program: open
+Arguments: -a Typora $FileRelativePath$
+Working directory: $ProjectFileDir$
+```
+
+Then in the right menu you can find external tool/Typora and open file with it
