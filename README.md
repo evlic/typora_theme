@@ -6,3 +6,24 @@
 
 - [Themeable](https://github.com/jhildenbiddle/typora-themeable)
   - 
+
+## install tutorial
+
+```shell
+###
+# macOS 
+###
+
+cd ~/Library/Application\ Support/abnerworks.Typora
+
+rm -rf themes
+
+git clone https://lab.evlic.cn/evlic/typora-theme.git themes
+
+killall Typora
+
+open -a Typora
+
+```
+
+enjoy it!
